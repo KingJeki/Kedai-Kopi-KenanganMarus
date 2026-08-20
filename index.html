@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kopi Kenangan Marus</title>
+
+    <!--  font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- feather icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- my style -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- navbae -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Kenangan<span>Marus.</span></a>
+
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="Cari Di Sini..." />
+        <label for="search-box"><i data-feather="search"></i></label>
+      </div>
+    </nav>
+
+    <!-- hero section start -->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>
+          Mari Nikmati <br />
+          Secangkir <span>Kopi</span>
+        </h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Perspiciatis, optio.
+        </p>
+        <a href="#" class="cta">Beli sekarang</a>
+      </main>
+    </section>
+    <!-- hero section end -->
+
+    <!-- about section -->
+    <section id="about" class="about">
+      <h2><span>Tentang</span> Kami</h2>
+
+      <div class="row">
+        <div class="about-img">
+          <img src="gambar/kipi-bg.jpg" alt="Tentang Kami" />
+        </div>
+        <div class="content">
+          <h3>Kenapa memilih kopi kami?</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+            exercitationem magnam excepturi nesciunt? At, ratione!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+            consectetur accusamus, quo sed animi velit labore odio doloribus
+            laborum rem!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu section -->
+    <section id="menu" class="menu">
+      <h2><span>Menu</span> Kami</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ipsum
+        modi eligendi autem ducimus adipisci.
+      </p>
+
+      <div class="row">
+        <div class="menu-card">
+          <img src="gambar/menu/1-bg.jpg" alt="espreso" class="menu-card-img" />
+          <h3 class="menu-card-title">Espreso</h3>
+          <p class="menu-card-price">IDR 14K</p>
+        </div>
+        <div class="menu-card">
+          <img src="gambar/menu/1-bg.jpg" alt="espreso" class="menu-card-img" />
+          <h3 class="menu-card-title">Espreso</h3>
+          <p class="menu-card-price">IDR 15K</p>
+        </div>
+        <div class="menu-card">
+          <img
+            src="gambar/menu/1-bg.jpg"
+            alt="espreso"
+            :class="menu-card-img"
+          />
+          <h3 class="menu-card-title">Espreso</h3>
+          <p class="menu-card-price">IDR 15K</p>
+        </div>
+        <div class="menu-card">
+          <img
+            src="gambar/menu/1-bg.jpg"
+            alt="espreso"
+            :class="menu-card-img"
+          />
+          <h3 class="menu-card-title">Espreso</h3>
+          <p class="menu-card-price">IDR 15K</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section -->
+    <section id="contact" class="contact">
+      <h2><span>Kontak</span> Kami</h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, quam?
+      </p>
+
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.517589093774!2d99.05067067363767!3d2.9537725970224398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30318554c59ce547%3A0xc9ca6aa359b70744!2sSate%20Kambing%20Kembara!5e0!3m2!1sid!2sid!4v1787123454095!5m2!1sid!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+          class="map"
+        ></iframe>
+
+        <form action="">
+          <div class="input-group">
+            <i data-feather="user"></i>
+            <input type="text" placeholder="nama" />
+          </div>
+          <div class="input-group">
+            <i data-feather="mail"></i>
+            <input type="text" placeholder="email" />
+          </div>
+          <div class="input-group">
+            <i data-feather="phone"></i>
+            <input type="text" placeholder="no hp" />
+          </div>
+          <button type="submit" class="btn">Kirim pesan</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <footer>
+      <div class="social">
+        <a href="https://www.instagram.com/jkt48.michie_?igsi=cHp4c2E1dHpxenZ5"
+          ><i data-feather="instagram"></i
+        ></a>
+        <a href="https://x.com/Michie_JKT48?s=20"
+          ><i data-feather="twitter"></i
+        ></a>
+        <a href="https://youtube.com/@luthfihalimawan?si=4NgBdK78RIfgofCT"
+          ><i data-feather="youtube"></i
+        ></a>
+      </div>
+
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#menu">Menu</a>
+        <a href="#Kontak">Kontak</a>
+      </div>
+
+      <div class="credit">
+        <p>Created By <a href="">JekiHuha</a>. | &copy; 2026.</p>
+      </div>
+    </footer>
+    <!-- feather icon -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- My javascript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
